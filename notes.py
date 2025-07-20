@@ -29,7 +29,7 @@ class Note:
     
     def edit(self, id, string):
         try:
-            self.notes[id] = (datetime.now(), string)
+            self.notes[id] = [datetime.now(), string]
             print("Заметка изменена!")
         except KeyError:
             print("Нет такого индекса")
