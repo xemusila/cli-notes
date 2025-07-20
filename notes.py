@@ -31,6 +31,6 @@ class Note:
         try:
             self.notes[id] = (datetime.now(), string)
             print("Заметка изменена!")
-        except IndexError:
+        except KeyError:
             print("Нет такого индекса")
     
